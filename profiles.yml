@@ -6,7 +6,7 @@ sqlserver_dbtcore:
       driver: 'ODBC Driver 17 for SQL Server'
       server: DESKTOP-RC4C5PQ\SQL2022
       port: 1433
-      database: AdventureWorks2022
+      database: dbt_projects
       schema: dbo
       windows_login: True
       trust_cert: True
