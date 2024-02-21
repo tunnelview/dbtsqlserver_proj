@@ -1,6 +1,14 @@
 sqlserver_dbtcore:
-  target: dev
   outputs:
+    default:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      server: DESKTOP-RC4C5PQ\SQL2022
+      port: 1433
+      database: dbt_projects
+      schema: dbt_analytics
+      windows_login: True
+      trust_cert: True
     dev:
       type: sqlserver
       driver: 'ODBC Driver 17 for SQL Server'
@@ -8,6 +16,15 @@ sqlserver_dbtcore:
       port: 1433
       database: dbt_projects
       schema: dbo
+      windows_login: True
+      trust_cert: True
+    prod:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      server: DESKTOP-RC4C5PQ\SQL2022
+      port: 1433
+      database: dbt_projects
+      schema: dbt_analytics
       windows_login: True
       trust_cert: True
 
