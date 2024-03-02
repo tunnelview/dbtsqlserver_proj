@@ -32,7 +32,7 @@ customer_orders as (
 
     from orders
 
-    group by 1
+    group by customer_id
 
 ),
 
